@@ -1,0 +1,2 @@
+News Article Clustering is a project to learn clustering machine laerinng technique by applying clustering on RSS news feed
+Project Confluence Page : https://confluence.int.net.nokia.com/display/~sankaraa/News+Article+Clustering

@@ -1,0 +1,2 @@
+docker pull csf-docker-delivered.repo.lab.pl.alcatel-lucent.com/cmgo/mongo:4.0.9-2.147
+docker run --rm -d --name mongo -it csf-docker-delivered.repo.lab.pl.alcatel-lucent.com/cmgo/mongo:4.0.9-2.147
