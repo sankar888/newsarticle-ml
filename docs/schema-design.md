@@ -32,8 +32,14 @@ The mandatory fields of Rss Specification 2.0.11 are
 > And item represents the news article from that particular source. going for flat structure. the channel information can be embedded in every item
 > So there will be a single pojo which contains the flattened item and channel info 
 
+- [ ] How to parse the incoming data to the model pojo?
+> The incoming xml data can be parsed to custom object first, and then it can be mapped to pojo and then purged to store (or)
+> The incoming xml data can be parsed to a reader, and then reader can be used to create the custom pojo, and then to store.
+> Keeping it simple, decided to use pojo class and to use jackson-xml
+ 
 ### Resources
 
  1. [Sample Rss 2.0.11 file](http://www.rssboard.org/files/sample-rss-2.xml)
  2. [Rss Validator](http://www.rssboard.org/rss-validator/)
+ 3. [Jackson xml Annotations](https://github.com/FasterXML/jackson-dataformat-xml/wiki/Jackson-XML-annotations)
 
