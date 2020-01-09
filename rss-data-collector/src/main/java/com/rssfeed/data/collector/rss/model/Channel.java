@@ -1,12 +1,8 @@
-package com.rssfeed.data.collector.model;
+package com.rssfeed.data.collector.rss.model;
 
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
-import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.util.List;
 
 /**
@@ -37,11 +33,56 @@ public class Channel {
     @JacksonXmlProperty
     private String ttl;
     @JacksonXmlProperty
-    private String image;
-    @JacksonXmlProperty
     private String rating;
     @JacksonXmlElementWrapper(useWrapping = false)
     @JacksonXmlProperty(localName = "item")
     private List<Item> item;
 
+    public String getTitle() {
+        return title;
+    }
+
+    public String getLink() {
+        return link;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public String getLanguage() {
+        return language;
+    }
+
+    public String getManagingEditor() {
+        return managingEditor;
+    }
+
+    public String getWebMaster() {
+        return webMaster;
+    }
+
+    public String getPubDate() {
+        return pubDate;
+    }
+
+    public String getLastBuildDate() {
+        return lastBuildDate;
+    }
+
+    public String getCategory() {
+        return category;
+    }
+
+    public String getTtl() {
+        return ttl;
+    }
+
+    public String getRating() {
+        return rating;
+    }
+
+    public List<Item> getItem() {
+        return item;
+    }
 }

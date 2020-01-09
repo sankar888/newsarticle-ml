@@ -1,16 +1,9 @@
 package com.rssfeed.data;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.*;
-import com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair;
-import com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector;
 import com.fasterxml.jackson.dataformat.xml.JacksonXmlModule;
 import com.fasterxml.jackson.dataformat.xml.XmlMapper;
-import com.fasterxml.jackson.dataformat.xml.deser.FromXmlParser;
-import com.fasterxml.jackson.module.jaxb.JaxbAnnotationIntrospector;
-import com.fasterxml.jackson.module.jaxb.JaxbAnnotationModule;
-import com.rssfeed.data.collector.model.Rss;
+import com.rssfeed.data.collector.rss.model.Rss;
 
 public class TestJacksonParser {
     public static void main(String[] args) throws Exception {
